@@ -1,0 +1,493 @@
+body{
+    margin:0px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+
+ /*------header------*/
+#body-header{
+    height:65vh;
+    opacity:0.8;
+    background-image: url(images/laptop_baground.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+
+
+/*----Horizontal list----*/
+
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li{
+    display: inline-block;
+    margin:0px 14px 14px 14px;
+    /* font-weight: 100; */
+    font-size:1.2rem;
+}
+
+.horizontal-list li a{
+    color:white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.horizontal-list li a:hover{
+    color:lightgray;
+    text-decoration: underline;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/*-----MY_NAME------*/
+
+#my-name{
+    font-size: 2.38rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    padding-top:65px;
+    color:white;
+    text-shadow: 1px 1px rgb(13, 183, 212);
+}
+
+/*-------Social Icons-----*/
+
+.social-icons li a i{
+    padding: 10px;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    text-align:right;
+}
+
+
+.social-icons li a i:hover{
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+.social-icons li:hover{
+    border-radius: 50%;
+}
+#instagram:hover{
+     background: linear-gradient(49.2deg,#f9ed32,#ee2a7b,#002aff);
+}
+#linkedin:hover {
+  background-color: #0077b5;
+}
+#twitter:hover {
+  background-color: #83c3f3;
+}
+#gmail:hover {
+  background-color:#dd4b39;
+}
+#whatsapp:hover {
+  background-color: #6ba92f;
+}
+#facebook:hover {
+  background-color: #3b5998;
+}
+
+/*--------Sections----------*/
+section {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+
+section:nth-child(2n) {
+    background-color: #9e9b9b29;
+}
+
+section:nth-child(2n + 1) {
+    background-color: white;
+}
+.section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    /* font-weight: 400; */
+}
+
+.section-heading span {
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+/*-----------------About Section----------*/
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;/* This property will override the header portion so that my photo appears clearly */
+    margin-bottom: 30px;
+}
+#my-image{
+    height: 17rem;
+    width: 17rem;
+    margin: auto;
+    margin-top: -22vh;
+}
+#my-image img{
+    height:100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0.2px 0.2px 6px 4px rgb(10, 92, 245);
+}
+#about p{
+    margin:20vh;
+    /* text-align: center; */
+    word-spacing:0.2rem;
+}
+
+#about-para {
+    padding: 10px;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-weight: 100;
+    font-size: 1.1rem;
+}
+
+/*-----------common color classes ---------------*/
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+
+}
+
+/*-------------Skills Section---------*/
+.skills-display{
+    width:70%;
+    /* height:100px; */
+    padding: 10px;
+    margin-bottom: 30px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    /* border:2px solid red; */
+}
+
+.skill-progress{
+    width:11rem;
+    height:2.2rem;
+    background-color:lightgrey;
+    border-radius:1rem;
+    box-shadow:1px 1px 2px 1px #b9b9b9 inset;
+    margin:25px;
+    overflow:hidden;
+}
+
+.skill-progress > div {
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+.skill-name span{
+    color:white;
+    margin-left:10px;
+    font-size:1rem;
+    vertical-align:middle;
+}
+
+
+
+
+
+
+
+
+/*--------------wORK-----------------*/
+#work-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.work-image-container {
+    max-width: 300px;
+    overflow: hidden;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.work-image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.work-details {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+}
+
+.work-image-container:hover {
+    box-shadow: 0 0 20px #74ADC8;
+}
+
+.work-image-container:hover .work-details {
+    background-color: #80808078;
+    color: white;
+}
+
+
+
+/*--------------Education-----------------*/
+
+
+.timeline {
+    position: relative;
+    width: 75%;
+}
+
+.timeline-box {
+    padding: 5px;
+    width: 40%;
+    min-height: 150px;
+    position: relative;
+    left: 5%;
+    text-align: right;
+}
+
+.timeline-box::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: lightgrey;
+    top: 25%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n) {
+    left: 53%;
+}
+
+.timeline-box:nth-child(2n+1)::after {
+    right: -11.8%;
+}
+
+.timeline-box:nth-child(2n)::after {
+    left: -9%;
+}
+
+.timeline-container {
+    padding: 8px;
+}
+#timeline-divider {
+    position: absolute;
+    width: 0;
+    top: 10%;
+    left: 50%;
+    border: 1px dashed #0096fa6b;
+    height: 66%;
+    color: #433E3F;
+}
+
+#timeline-divider .timeline-traveller {
+    position: sticky;
+    top: 135px;
+    z-index: 2;
+}
+
+#timeline-divider i {
+    transform: rotate(90deg);
+    margin-top: -35px;
+    display: block;
+    color: #2857a4;
+}
+
+.education-designation {
+    font-size: 1.4rem;
+}
+
+.education-description {
+    font-size: 20px;
+    padding: 2px;
+    color:rgb(172 71 41);
+    line-height: 20px;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
+
+
+/*---------Contact Details----------*/
+#contact {
+    background-color: #0abcf9;
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    color: white;
+    padding-bottom: 40px;
+}
+/* #contact h1, */
+#contact h1 span {
+    color: white;
+}
+
+#contact-form {
+    margin-left: 20%;
+}
+
+#contact-container {
+    display: flex;
+}
+
+#my-details-container {
+    width: 35%;
+    margin-left: 6%;
+}
+
+#my-details-container h3 {
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+#contact-form-container {
+    width: 50%;
+}
+
+#my-details-container p {
+    color: #d9dcdd;
+    font-size: 0.9rem;
+}
+
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+    font-size: 1rem;
+}
+
+.my-details-info-container span {
+    margin-left: 0.4rem;
+}
+
+.my-details-info-container i {
+    color: white;
+}
+
+
+#contact-form input, textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: #d9dcdd;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+#contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+
+.social{
+    margin-top:30px;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+
+/*--------- Common Margin Classes -------------*/
+.mb75px {
+    margin-bottom: 75px;
+}
+.mb50px {
+    margin-bottom: 50px;
+}
+.m0 {
+    margin: 0;
+}
+
+
+
+
+
+/*----------setting background-color------------- */
+
+.mb-blue {
+    background-color: #2857a4;
+}
+.mb-orange {
+    background-color: #ec4d1c;
+}
+
+.mb-green {
+    background-color: #0b8176;
+}
+
+.mb-light-purple {
+    background-color: #dd7ac8;
+}
+.mb-yellow{
+    background-color:rgb(16, 194, 238);
+}
+
+
+
+
+
+
+/*--------------Percentage Classes-----------------*/
+
+.eighty-five-percent {
+    height: inherit;  /*same as parent*/
+    width: 85%;
+}
+
+.seventy-five-percent{
+    height: inherit; 
+    width: 75%;
+}
